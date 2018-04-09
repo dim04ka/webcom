@@ -1,0 +1,118 @@
+.work {
+    background-image: url("../img/work/work_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    &__block {
+        &-title {
+            width: 70%;
+            text-align: center;
+            margin: 0 auto;
+
+            h2 {
+                color: #28363d;
+                font-family: "Myriad Pro";
+                font-size: 48px;
+                font-weight: 400;
+                line-height: 43.91px;
+                text-transform: uppercase;
+                margin-top: 70px;
+                &::after {
+                    content: url(../img/footer/ico.png);
+                    display: block;
+                }
+            }
+            p {
+                color: #8198a0;
+                font-family: "Myriad Pro";
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 35.94px;
+                padding-bottom: 30px;
+            }
+        }
+    }
+    &__cards {
+        margin: 0 -5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        a {
+            &:hover {
+                .work__cards-disc {
+                    display: block;
+                }
+            } 
+            img {
+                position: relative;
+                width: 100%;
+                left: 430%;
+            }
+        }
+        &-disc {
+            width: 460px;
+            height: 100px;
+            background-color: #d4d7d8;
+            position: absolute;
+            bottom: 0;
+            display: none;
+            h3 {
+                color: #28363d;
+                font-family: "Myriad Pro";
+                font-size: 18px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 1.08px;
+                padding-left: 40px;
+                padding-top: 15px;
+                &::after {
+                    content: url(../img/footer/ico.png);
+                    display: block;
+                    height: 6px;
+                }
+            }
+            p {
+                color: #7b7b7b;
+                font-family: "Myriad Pro";
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 36px;
+                text-transform: uppercase;
+                letter-spacing: 0.96px;
+                padding: 15px 40px;
+            }
+        }
+    }
+    &__item {
+        position: relative;
+        width: 460px;
+        height: 320px;
+        margin: 5px 5px;
+    }
+}
+@media screen and (max-width: 1160px) {
+    .work__block-title {
+        p {
+            font-size: 14px;
+        }
+    }
+
+}
+@media screen and (max-width: 905px) {
+    .work__block-title {
+        p {
+            font-size: 10px;
+        }
+    }
+}
+@media screen and (max-width: 550px) {
+    .work__item{
+        width: 80%;
+        height: auto;
+    }
+    .work__cards-disc {
+        width: 100%;
+        opacity: 0.9;
+        top: 0;
+    }
+}

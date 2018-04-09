@@ -1,0 +1,162 @@
+.review {
+    &__block {
+        &-title {
+            width: 70%;
+            text-align: center;
+            margin: 0 auto;
+            h2 {
+                color: #28363d;
+                font-family: "Myriad Pro";
+                font-size: 48px;
+                font-weight: 400;
+                line-height: 43.91px;
+                text-transform: uppercase;
+                &::after {
+                    content: url(../img/footer/ico.png);
+                    display: block;
+                }
+            }
+            }
+            p {
+                color: #8198a0;
+                font-family: "Myriad Pro";
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 35.94px;
+            }
+        }
+    &__forms{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 25px;
+        flex-wrap: wrap;
+    }
+    &__form {
+        width: 25%;
+        &-title {
+            color: #ff8207;
+            font-family: "Myriad Pro";
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 24px;
+            text-transform: uppercase;
+            margin: 20px 0px;
+        }
+        &-disc {
+            color: #999999;
+            font-family: "Myriad Pro";
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+        &-file {
+            position: relative;
+            padding: 10px 0;
+            input[type=file] {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 130px;
+                height: 60px;
+                opacity: 0;
+                z-index: 1;
+            }
+        }
+    }
+    &__input {
+        width: 45%;
+        margin-right: 140px;
+        position: relative;
+        &-title {
+            color: #28363d;
+            font-family: "Myriad Pro";
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 24px;
+        }
+        input[type=text] {
+            border: none;
+            border-bottom: 1px solid #999999;
+            font-family: "Myriad Pro";
+            font-style: italic;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 24px;
+            width: 100%;
+            margin-bottom: 25px;
+            opacity: 0.2;
+        }
+        .input_capt {
+            width: 50%;
+        }
+        .submit {
+            color: #ffffff;
+            font-family: "Myriad Pro";
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 40px;
+            text-transform: uppercase;
+            letter-spacing: 1.8px;
+            border-radius: 10px;
+            background-color: #ff8207;
+            padding: 8px 25px;
+            margin-left: 250px;
+
+        }
+        textarea {
+            font-family: "Myriad Pro";
+            font-style: italic;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 24px;
+            resize: none;
+            width: 100%;
+            border-bottom: 1px solid #999999;
+            margin-bottom: 25px;
+            opacity: 0.2;
+        }
+    }
+}
+#moveUp {
+    position: absolute;
+    background-image: url(../img/review/Up.png);
+    width: 54px;
+    height: 54px;
+    bottom: 30px;
+    right: 40px;
+    background-size: cover;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+@media screen and (max-width:1250px) {
+    .review__block-title {
+        margin-top: 100px;
+        p {
+            font-size: 14px;
+        }
+    }
+    .review__forms {
+        justify-content: space-around;
+    }
+}
+@media screen and (max-width:881px) {
+    .review__form {
+        text-align: center;
+        width: 100%;
+    }
+    .review__input {
+        width: 80%;
+        margin-right: 0;
+        margin-top: 60px;
+    }
+    input[type=submit]{
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width:600px) {
+    input[type=submit] {
+        margin-left: 1px!important;
+        width: 70%;
+    }
+}
